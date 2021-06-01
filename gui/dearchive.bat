@@ -24,12 +24,10 @@ $inputpath= $wslppath + "/" + $filename
 $cryptedpasswordpath= $wslppath + "/" + $filename + ".passwd.enc"
 $passwordpath= $wslppath + "/" + $filename + ".passwd"
 $outputpath= $wslppath + "/" + $filename -replace ".tar.gz.aes",""
-$wslpasspath=wsl --exec wslpath -u $passwordpath
 
 
 #Write-Host $wslppath
 #Write-Host $githubId
-#Write-Host $wslpasspath
 
 $dearchivePath = $env:QIICIPHER_BIN + "dearchive"
 $decPath = $env:QIICIPHER_BIN + "dec"
