@@ -38,5 +38,6 @@ wsl bash -c $archiveCmd
 $encCmd=$encPath + " " + $githubId + " " + $wslpasspath
 #Write-Host $encCmd
 wsl bash -c $encCmd
+Remove-Item -Path $passwordpath
 
 pause
