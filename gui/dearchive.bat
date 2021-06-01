@@ -13,7 +13,7 @@ $defaultPassword = [System.Web.Security.Membership]::GeneratePassword(20,3)
 
 $privatekeypath=$env:QIICIPHER_GITHUB_KEYNAME
 if([string]::IsNullOrEmpty($privatekeypath)) {
-    $privatekeypath = [Microsoft.VisualBasic.Interaction]::InputBox('Enter the path of github private key', 'private key path')
+    $privatekeypath = [Microsoft.VisualBasic.Interaction]::InputBox('Enter the path of your primary private key of Github.', 'private key path')
 }
 
 $wslpath=wsl --exec wslpath -u $path

@@ -10,7 +10,7 @@ $path = [string]$args;
 Add-type -AssemblyName System.Web
 Add-Type -AssemblyName Microsoft.VisualBasic
 $defaultPassword = [System.Web.Security.Membership]::GeneratePassword(20,3)
-$githubId = [Microsoft.VisualBasic.Interaction]::InputBox('Enter the Github userid who you want to send a file', 'Github user id')
+$githubId = [Microsoft.VisualBasic.Interaction]::InputBox('Enter the Github user id of the person you want to send the file to.', 'Github user id')
 
 $wslpath=wsl --exec wslpath -u $path
 $filename=[System.IO.Path]::GetFileName($path)
