@@ -11,7 +11,7 @@ Add-type -AssemblyName System.Web
 Add-Type -AssemblyName Microsoft.VisualBasic
 $defaultPassword = [System.Web.Security.Membership]::GeneratePassword(20,3)
 
-$privatekeypath=$env:QIICIPHER_GITHUB_KEYNAME
+$privatekeypath=$env:QIICIPHER_GITHUB_PRIVATE_KEY
 if([string]::IsNullOrEmpty($privatekeypath)) {
     $privatekeypath = [Microsoft.VisualBasic.Interaction]::InputBox('Enter the path of your primary private key of Github.', 'private key path')
 }
