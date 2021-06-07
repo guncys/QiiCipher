@@ -23,7 +23,7 @@ $wslppath=wsl --exec wslpath -u $parentpath
 $inputpath= $wslppath + "/" + $filename
 $cryptedpasswordpath= $wslppath + "/" + $filename + ".passwd.enc"
 $passwordpath= $wslppath + "/" + $filename + ".passwd"
-$outputpath= $wslppath + "/" + $filename -replace ".tar.gz.aes",""
+$outputpath= $wslppath + "/"
 
 
 #Write-Host $wslppath
